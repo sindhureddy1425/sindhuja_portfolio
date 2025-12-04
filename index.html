@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kodaganti Sindhuja Reddy — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Sindhuja Reddy</div>
+        <div class="nav-links">\n          <a href="https://www.linkedin.com/in/sindhuja-reddy-kodaganti-7819a6338" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div>
+        <h1>Hello, I'm <span style="color:var(--accent)">Kodaganti Sindhuja Reddy</span></h1>
+        <h3 style="margin-top:6px;font-weight:600">Aspiring Data Analyst</h3>
+        <p>I turn raw data into clear insights using SQL, Excel, Power BI and Python.</p>
+        <div style="margin-top:18px">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="Sindhuja_Resume_latest.pdf" target="_blank">My Resume</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="profile-photo" src="hero.jpg" alt="Hero photo">
+      </div>
+    </section>
+
+    <section id="about" class="card two-col">
+      <div>
+        <h2>Who am I?</h2>
+        <p>I'm a B.Tech (Data Science) graduate with hands-on experience in SQL, Excel, Power BI and Python. I build dashboards and data-driven solutions that help teams make decisions.</p>
+        <ul style="color:var(--muted);margin-top:12px;line-height:1.8">
+          <li><strong>Name:</strong> Kodaganti Sindhuja Reddy</li>
+          <li><strong>Email:</strong> <a href="mailto:sindhureddypooja14@gmail.com">sindhureddypooja14@gmail.com</a></li>
+          <li><strong>Location:</strong> Hyderabad, India</li>
+        </ul>
+      </div>
+      <div>
+        <img class="responsive" src="about.jpg" alt="About photo" style="border-radius:12px">
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>B.Tech — CSE (Data Science)</strong> — AVNIET, Hyderabad (2021 — 2025)<br>
+        <strong>Intermediate (MPC)</strong> — Narayana Junior College, Basara (2019 — 2021)<br>
+        <strong>SSC</strong> — Navvena Montessori School (2019)
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><h4>SQL</h4><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill"><h4>Excel</h4><div class="bar"><span style="width:95%"></span></div></div>
+        <div class="skill"><h4>Power BI</h4><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill"><h4>Python</h4><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="skill"><h4>Data Viz</h4><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill"><h4>Office</h4><div class="bar"><span style="width:95%"></span></div></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card"><h3>Railway Reservation Management System</h3><p style="color:var(--muted)">Tech: SQL, Python — booking and availability demo.</p></div>
+        <div class="card"><h3>Vision-Based Smart Parking System</h3><p style="color:var(--muted)">Tech: Python, OpenCV — detects free slots from camera feed.</p></div>
+        <div class="card"><h3>Give Yourself</h3><p style="color:var(--muted)">Personal dashboards & practice tasks.</p></div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certificates</h2>
+      <div class="cert-grid">
+        <div class="cert"><strong>My Certifications</strong><br><a href="my_certifications.pdf" target="_blank" class="btn" style="margin-top:8px;display:inline-block">View</a></div>
+        <div class="cert"><strong>Web Development Certificate Sindhu</strong><br><a href="web_development_certificate_sindhu.pdf" target="_blank" class="btn" style="margin-top:8px;display:inline-block">View</a></div>
+        <div class="cert"><strong>Microsoft Real Time Intelligence</strong><br><a href="microsoft_real_time_intelligence.pdf" target="_blank" class="btn" style="margin-top:8px;display:inline-block">View</a></div>
+        <div class="cert"><strong>Fabric Micro</strong><br><a href="fabric_micro.pdf" target="_blank" class="btn" style="margin-top:8px;display:inline-block">View</a></div>
+
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="gallery1.jpg" alt="gallery1.jpg" onclick="openLightbox(this.src)">
+        <img src="gallery2.jpg" alt="gallery2.jpg" onclick="openLightbox(this.src)">
+        <img src="about.jpg" alt="about.jpg" onclick="openLightbox(this.src)">
+        <img src="hero.jpg" alt="hero.jpg" onclick="openLightbox(this.src)">
+
+      </div>
+
+      <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;z-index:200">
+        <img id="lightbox-img" src="" style="max-width:92%;max-height:86%;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.5)">
+        <button onclick="closeLightbox()" style="position:fixed;top:20px;right:24px;background:transparent;border:none;color:white;font-size:28px;cursor:pointer">✕</button>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div class="two-col" style="align-items:center">
+        <div>
+          <p style="color:var(--muted)">I'm open to internships, projects, and collaborations. Reach out and let's build something together.</p>
+          <ul style="color:var(--muted);line-height:1.8">
+            <li><strong>Location:</strong> Hyderabad, India</li>
+            <li><strong>Email:</strong> <a href="mailto:sindhureddypooja14@gmail.com">sindhureddypooja14@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <form onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:8px">
+            <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+            <input name="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+            <input name="subject" placeholder="Subject" style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+            <textarea name="message" placeholder="Message" rows="5" style="padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built by Kodaganti Sindhuja Reddy — Aspiring Data Analyst • © 2025</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
