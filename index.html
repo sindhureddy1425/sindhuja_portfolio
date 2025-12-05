@@ -113,28 +113,26 @@
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <div class="two-col" style="align-items:center">
-        <div>
-          <p style="color:var(--muted)">I'm open to internships, projects, and collaborations. Reach out and let's build something together.</p>
-          <ul style="color:var(--muted);line-height:1.8">
-            <li><strong>Location:</strong> Hyderabad, India</li>
-            <li><strong>Email:</strong> <a href="mailto:sindhureddypooja14@gmail.com">sindhureddypooja14@gmail.com</a></li>
-          </ul>
-        </div>
-        <div>
-          <form onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:8px">
-            <input name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
-            <input name="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
-            <input name="subject" placeholder="Subject" style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
-            <textarea name="message" placeholder="Message" rows="5" style="padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
-            <button class="btn" type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <form action="https://formsubmit.co/sindhureddypooja14@gmail.com" method="POST">
 
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://sindhureddy1425.github.io/sindhuja_portfolio/success.html">
+    <input type="text" name="_honey" style="display:none">
+
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Subject</label>
+    <input type="text" name="subject" required>
+
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
     <footer>
       <p>Built by Kodaganti Sindhuja Reddy — Aspiring Data Analyst • © 2025</p>
     </footer>
